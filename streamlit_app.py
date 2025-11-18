@@ -15,7 +15,7 @@ name = st.text_input("Enter your name")
 # knowledge base
 env.build('(deftemplate result (slot name))')
 # add facts to working memory
-env.assert_string(f'(result (name "{name}))')
+env.assert_string(f'(result (name "{name}"))')
 # inference
 env.run()
 
